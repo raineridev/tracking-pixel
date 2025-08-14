@@ -1,0 +1,23 @@
+{
+  "name": "tracking-pixel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raineridev/tracking-pixel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raineridev/tracking-pixel/issues"
+  },
+  "homepage": "https://github.com/raineridev/tracking-pixel#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
