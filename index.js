@@ -27,7 +27,8 @@ app.get("/track/:id", async (req, res) => {
     console.error("Erro ao enviar webhook:", err);
   }
 
-  res.sendFile(path.join(__dirname, "image.png"));
+    res.setHeader("Content-Type", "image/png");
+    res.sendFile(path.join(__dirname, "image.png"));
 });
 
 app.listen(PORT, () => {
