@@ -12,7 +12,7 @@ const PORT = 3000;
 
 const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1405697169381527562/OOuVoNxUACWzOQASQwtRHL2007whnF141twunZ1Q4DLHdjXzUqnbXxczuB3_r1Vn5o0Y";
 
-app.get("/track/:id", async (req, res) => {
+app.get("/", async (req, res) => {
   const emailId = req.params.id;
 
   try {
