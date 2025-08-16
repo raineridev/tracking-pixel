@@ -1,18 +1,30 @@
 {
   "name": "tracking-pixel",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Sistema avançado de tracking pixel para emails com coleta detalhada de informações",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js",
+    "start": "node index.js",
+    "test": "node test-tracking.js",
+    "build": "echo 'Build completed successfully'",
+    "deploy": "vercel --prod"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raineridev/tracking-pixel.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "tracking",
+    "pixel",
+    "email",
+    "analytics",
+    "discord",
+    "webhook",
+    "geolocation"
+  ],
+  "author": "raineridev",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/raineridev/tracking-pixel/issues"
