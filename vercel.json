@@ -1,0 +1,38 @@
+{
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 10
+    },
+    "api/stats.js": {
+      "maxDuration": 10
+    },
+    "api/export.js": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/track/:id",
+      "destination": "/api/index?id=:id"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/index",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "Expires",
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}
