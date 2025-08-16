@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     console.error("Erro ao enviar webhook:", err);
   }
 
-  const pixelPath = path.join(process.cwd(), "public", "image.png");
+  const pixelPath = path.join(process.cwd(), "public", "pixel.png");
   const pixel = await fs.readFile(pixelPath);
   res.setHeader("Content-Type", "image/png");
   res.status(200).send(pixel);
