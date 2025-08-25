@@ -210,3 +210,4 @@ vercel --prod
 ### Geolocalização imprecisa
 - O serviço usa IP público, pode ser impreciso com VPNs
 - IPs locais mostram "Local" por padrão
+## New Feats
